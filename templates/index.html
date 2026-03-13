@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Date of Birth</title>
+    <link rel="stylesheet" href="/static/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="maincont" >
+        <h1 class="font-sarif text-5xl font-bold text-center pt-6 pb-7" style="font-family: Sour Gummy, sans-serif; color: rgb(45, 45, 45);" >Find your twin</h1>
+    <form method="POST">
+        <label class="font-bold text-lg font-sarif px-12 pb-2" for="name" style="font-family: Patrick Hand SC, cursive;">Enter Name:</label>
+        <input class="mx-12" placeholder="Enter your name" type="text" id="name" name="name" required>
+        <label class="font-bold text-lg mx-12 font-sarif pb-2"for="dob"style="font-family: Patrick Hand SC, cursive;" >Enter Date of Birth:</label>
+        <input  id="dateob" class="mx-12 rounded-md px-2 py-2" type="date" id="dob" name="dob" required>
+        <input class="font-mono font-bold text-2xl"  style="font-family: Patrick Hand SC, cursive;" type="submit" value="Find twin">
+    </form>
+    <div class="result ">
+        {% if result %}
+        <h2 class="answer">{{ result }}</h2>
+        {% endif %}
+    </div>
+</div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+follow these steps
+
+1) Install Python
+2) install vertual Environment :- pip install virtualenv
+3) activate virtualenv (virtual environment already created you just need to activate it with the given command)  :- .\env\Scripts\activate.ps1  //use powershell terminal
+4) Install Flask :-  pip install flask
+5) run app.py :- Python app.py

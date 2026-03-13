@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #a176ff;
+    margin: 0;
+    padding: 0; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+#maincont {
+    background-color: rgb(223, 219, 255);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 550px;
+    flex-direction: column;
+    border-radius: 20px;
+    /* padding: 30px; */
+    box-shadow: 0px 0px 20px -5px  #3300a0;
+}
+
+.ELEMENT{
+    background-color: rgb(87, 4, 195);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    right: 55%;
+}
+.ELEMENT1{
+    background-color: rgb(84, 0, 219);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: -1;
+    top: 50px;
+}
+.ELEMENT2{
+    background-color: rgb(58, 0, 119);
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    position: fixed;
+    z-index: -1;
+    left: 55%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #a77fff;
+    box-shadow: #5128a9 0px 0px 15px -7px;
+    border-radius: 9px;
+    border-color: #a77fff;
+}
+#dateob{
+    border: 3px solid #ccc;
+    box-shadow: #5128a9 0px 0px 15px -7px;
+    border-radius: 9px;
+    border-color: #a77fff;
+}
+input[type="submit"] {
+    padding: 10px;
+    width: max-content;
+    margin: auto;
+    padding: 6px 40px 6px 40px;
+    margin-top: 25px;
+    background-color: #5600c6;
+    box-shadow: #5128a9 0px 0px 15px -4px;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.4s ease , background-color 0.4s ease, transform 0.2s ease;
+}
+
+input[type="submit"]:hover {
+    box-shadow: #5128a9 0px 0px 20px -4px;
+    background-color: #864eff;
+}
+.result{
+    background-color: rgb(240, 235, 255);
+    width: 90%;
+    padding: 15px 10px 15px 10px;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    text-align: center;
+    margin:auto ;
+    margin-bottom: 10px;
+    margin-top: 50px; ;
+    border-radius: 12px;
+    box-shadow: #5128a9b1 0px 0px 15px -6px;
+    border: 3px solid #a77fff;
+
+}
+.result h2{
+    font-family: Patrick Hand SC, cursive;
+    /* padding-top: 20px; */
+    font-weight: 700;
+    font-size: larger;
+}
